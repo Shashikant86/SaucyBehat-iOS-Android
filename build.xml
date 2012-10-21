@@ -18,13 +18,13 @@
     </exec>
   </target>
   <target name="iPad">
-    <echo message="RUnning Behat Tests on iPhone with SauceLabs"/>
+    <echo message="RUnning Behat Tests on iPad with SauceLabs"/>
     <exec dir="${basedir}" executable="php" failonerror="true">
     <arg line= "bin/behat -p iPad -f html --out report/report.html"/>
     </exec>
   </target>
   <target name="android">
-    <echo message="RUnning Behat Tests on iPhone with SauceLabs"/>
+    <echo message="RUnning Behat Tests on Android with SauceLabs"/>
     <exec dir="${basedir}" executable="php" failonerror="true">
     <arg line= "bin/behat -p Android -f html --out report/report.html"/>
     </exec>
