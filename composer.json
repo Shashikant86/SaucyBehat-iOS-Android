@@ -6,8 +6,9 @@
         "behat/mink-selenium-driver": "*",
         "behat/mink-selenium2-driver": "*",
         "behat/mink-extension": "*",
-        "behat/mink-sahi-driver": "*"
-
+        "sauce/sausage": ">=0.5",
+        "sauce/connect": ">=3.0"
+        
     },
     "minimum-stability": "dev",
     "config": {
