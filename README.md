@@ -66,8 +66,34 @@ You will see test running on SauceLabs iPhone Driver.  https://saucelabs.com/job
 
 You will see test running on SauceLabs Android Driver.  https://saucelabs.com/jobs  
 
-----------------
+------------------
 
+#Build and Run all Profiles with ANT
+
+     $ ant SaucyBehat
+     
+Once all tests finished, you will see something like this 
+      
+      $ ant SaucyBehat
+      Buildfile: /Users/user/SaucyBehat-iOS-Android/build.xml
+      SaucyBehat:
+      [delete] Deleting directory /Users/user/SaucyBehat-iOS-Android/report
+      [mkdir] Created dir: /Users/user/SaucyBehat-iOS-Android/report
+      iPhone:
+      [echo] RUnning Behat Tests on iPhone with SauceLabs
+      iPad:
+      [echo] RUnning Behat Tests on iPhone with SauceLabs
+      android:
+      [echo] RUnning Behat Tests on iPhone with SauceLabs
+
+    BUILD SUCCESSFUL
+    Total time: 3 minutes 39 seconds
+    
+    
+You can use this build script to plug into your continuous integration server like Jenkins. 
+
+     
+------------------
 
 *Still Using SeleniumRC?
 
@@ -85,5 +111,12 @@ And Run
 You will see test running on SauceLabs https://saucelabs.com/jobs  
 
 
+# Contact Me
+
+Having touble? Please contact me on Twitter @Shashikant86 
+
+Enjoy Apple and Android Sauce with Behat !!!
+
+------------
 
 
