@@ -15,7 +15,7 @@ Windows:
     Behat\MinkExtension\Extension:
      selenium2:
         browser: internet explorer
-        wd_host: Shashikant86:a0e37e25-e2f3-4cba-95d3-936007d8bfc3@ondemand.saucelabs.com/wd/hub
+        wd_host: SAUCE-USERNAME:SAUCE-ACCESS-KEY@ondemand.saucelabs.com/wd/hub
         capabilities: {  "platform": "Windows 2012", "version": "10"}
 
 Mac:
@@ -25,7 +25,7 @@ Mac:
     Behat\MinkExtension\Extension:
      selenium2:
         browser: safari
-        wd_host: Shashikant86:a0e37e25-e2f3-4cba-95d3-936007d8bfc3@ondemand.saucelabs.com/wd/hub
+        wd_host: SAUCE-USERNAME:SAUCE-ACCESS-KEY@ondemand.saucelabs.com/wd/hub
         capabilities: {  "platform": "Mac 10.6", "version": "5"}
 
 
@@ -36,7 +36,7 @@ iPhone:
     Behat\MinkExtension\Extension:
      selenium2:
         browser: iphone
-        wd_host: Shashikant86:a0e37e25-e2f3-4cba-95d3-936007d8bfc3@ondemand.saucelabs.com/wd/hub
+        wd_host: SAUCE-USERNAME:SAUCE-ACCESS-KEY@ondemand.saucelabs.com/wd/hub
         capabilities: {  "platform": "Mac 10.8", "version": "6"}
 
 iPad:
@@ -46,7 +46,7 @@ iPad:
     Behat\MinkExtension\Extension:
      selenium2:
         browser: iPad
-        wd_host: Shashikant86:a0e37e25-e2f3-4cba-95d3-936007d8bfc3@ondemand.saucelabs.com/wd/hub
+        wd_host: SAUCE-USERNAME:SAUCE-ACCESS-KEY@ondemand.saucelabs.com/wd/hub
         capabilities: {  "platform": "Mac 10.8", "version": "6"}
 
 
@@ -57,7 +57,7 @@ Android:
     Behat\MinkExtension\Extension:
      selenium2:
         browser: android
-        wd_host: Shashikant86:a0e37e25-e2f3-4cba-95d3-936007d8bfc3@ondemand.saucelabs.com/wd/hub
+        wd_host: SAUCE-USERNAME:SAUCE-ACCESS-KEY@ondemand.saucelabs.com/wd/hub
         capabilities: {  "platform": "linux", "version": "4"}
 
 
@@ -75,8 +75,8 @@ SeleniumRC:
         port: 80
         browser: >
           {
-            "username":         "Shashikant86",
-            "access-key":       "a0e37e25-e2f3-4cba-95d3-936007d8bfc3",
+            "username":         "SAUCE-USERNAME",
+            "access-key":       "SAUCE-ACCESS-KEY",
             "browser":          "firefox",
             "browser-version":  "7",
             "os":               "Windows 2003",
@@ -84,4 +84,4 @@ SeleniumRC:
             "passed":             "true",
             "selenium-version": "2.24.1",
             "max-duration": 300
-          }  
+          }
