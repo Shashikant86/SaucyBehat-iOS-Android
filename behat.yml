@@ -51,6 +51,8 @@ iPad:
 
 
 Android:
+  filters:
+     tags: '@android'
   context:
     class:  'FeatureContext'
   extensions:
