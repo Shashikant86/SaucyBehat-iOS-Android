@@ -1,15 +1,32 @@
 <project name="behat" basedir=".">
   
-   <target name="run">
+   <target name="SaucyBehat">
     <delete dir="${basedir}/report" />
       <mkdir dir="${basedir}/report"/>
       <parallel>
-      <antcall target="behat"></antcall>
+        <sequential>
+              <antcall target="iPhone"></antcall>
+              <antcall target="iPad"></antcall>
+              <antcall target="android"></antcall>
+        </sequential>
      </parallel>
   </target>
-  <target name="behat">
+  <target name="iPhone">
+    <echo message="RUnning Behat Tests on iPhone with SauceLabs"/>
     <exec dir="${basedir}" executable="php" failonerror="true">
-    <arg line= "bin/behat -f html --out report/report.html"/>
+    <arg line= "bin/behat -p iPhone -f html --out report/report.html"/>
+    </exec>
+  </target>
+  <target name="iPad">
+    <echo message="RUnning Behat Tests on iPhone with SauceLabs"/>
+    <exec dir="${basedir}" executable="php" failonerror="true">
+    <arg line= "bin/behat -p iPad -f html --out report/report.html"/>
+    </exec>
+  </target>
+  <target name="android">
+    <echo message="RUnning Behat Tests on iPhone with SauceLabs"/>
+    <exec dir="${basedir}" executable="php" failonerror="true">
+    <arg line= "bin/behat -p Android -f html --out report/report.html"/>
     </exec>
   </target>
 </project>
