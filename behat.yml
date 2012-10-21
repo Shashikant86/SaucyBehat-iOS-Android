@@ -1,0 +1,87 @@
+default:
+  context:
+    class:  'FeatureContext'
+  extensions:
+    Behat\MinkExtension\Extension:
+      base_url:  'http://saucelabs.com'
+      javascript_session:  'selenium2'
+      goutte:              ~
+      selenium2:
+
+Windows:
+  context:
+    class:  'FeatureContext'
+  extensions:
+    Behat\MinkExtension\Extension:
+     selenium2:
+        browser: internet explorer
+        wd_host: Shashikant86:a0e37e25-e2f3-4cba-95d3-936007d8bfc3@ondemand.saucelabs.com/wd/hub
+        capabilities: {  "platform": "Windows 2012", "version": "10"}
+
+Mac:
+  context:
+    class:  'FeatureContext'
+  extensions:
+    Behat\MinkExtension\Extension:
+     selenium2:
+        browser: safari
+        wd_host: Shashikant86:a0e37e25-e2f3-4cba-95d3-936007d8bfc3@ondemand.saucelabs.com/wd/hub
+        capabilities: {  "platform": "Mac 10.6", "version": "5"}
+
+
+iPhone:
+  context:
+    class:  'FeatureContext'
+  extensions:
+    Behat\MinkExtension\Extension:
+     selenium2:
+        browser: iphone
+        wd_host: Shashikant86:a0e37e25-e2f3-4cba-95d3-936007d8bfc3@ondemand.saucelabs.com/wd/hub
+        capabilities: {  "platform": "Mac 10.8", "version": "6"}
+
+iPad:
+  context:
+    class:  'FeatureContext'
+  extensions:
+    Behat\MinkExtension\Extension:
+     selenium2:
+        browser: iPad
+        wd_host: Shashikant86:a0e37e25-e2f3-4cba-95d3-936007d8bfc3@ondemand.saucelabs.com/wd/hub
+        capabilities: {  "platform": "Mac 10.8", "version": "6"}
+
+
+Android:
+  context:
+    class:  'FeatureContext'
+  extensions:
+    Behat\MinkExtension\Extension:
+     selenium2:
+        browser: android
+        wd_host: Shashikant86:a0e37e25-e2f3-4cba-95d3-936007d8bfc3@ondemand.saucelabs.com/wd/hub
+        capabilities: {  "platform": "linux", "version": "4"}
+
+
+
+
+SeleniumRC:
+  context:
+    class:  'FeatureContext'
+  extensions:
+    Behat\MinkExtension\Extension:
+      base_url:  'http://saucelabs.com/'
+      javascript_session:  'selenium'
+      selenium:
+        host: ondemand.saucelabs.com
+        port: 80
+        browser: >
+          {
+            "username":         "Shashikant86",
+            "access-key":       "a0e37e25-e2f3-4cba-95d3-936007d8bfc3",
+            "browser":          "firefox",
+            "browser-version":  "7",
+            "os":               "Windows 2003",
+            "name":             "Testing Selenium with Behat",
+            "passed":             "true",
+            "selenium-version": "2.24.1",
+            "max-duration": 300
+          }  
